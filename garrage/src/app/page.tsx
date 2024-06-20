@@ -1,9 +1,17 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div className="container">
-      <div className="content">
-        <h1>Hello! Next.js</h1>
-      </div>
+    <div>
+
+      <Link href='/login'>
+        <button>Login</button>
+      </Link>
+
+      <Link href='/register'>
+      <button>Register</button>
+      </Link>
+      
     </div>
   );
 }
